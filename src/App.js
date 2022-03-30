@@ -1,22 +1,36 @@
 import React, { Component } from "react";
 import './App.css';
 
-const string2 = "this is the message inside the string2";
 
 class App extends Component {
   constructor(){
     super();
 
     this.state = {
-      string: "this is inside the state state"
+      monsters: [
+        {
+          name: "name 1",
+          id: "as21"
+        },
+        {
+          name: "name 2",
+          id: "as22"
+        },
+        {
+          name: "name 3",
+          id: "as23"
+        }
+      ]
     }
   }
 
   render() {
     return (
-      <div>
-        <p>{this.state.string}</p>
-        <button onClick={() => this.setState({ string: "message = "+string2 })}>change text</button>
+      <div className="app">
+        {
+          this.state.monsters.map(monster => (
+          <h1 key={monster.id}> {monster.name} </h1>
+          ))}
       </div>
     );
   }
