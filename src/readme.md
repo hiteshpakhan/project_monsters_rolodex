@@ -71,5 +71,5 @@ render() method comes with the Component
 
 ## componentDidMount :
 
-
+mounting means when the react put our component on the browser for the first time it calls whatever block of code inside the componentDidMount(){}
 
