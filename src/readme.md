@@ -1,5 +1,7 @@
 # notes for react
 
+* react divided the code into the small components 
+
 * to make the class based component 
 
     import React, { Component } from "react";
@@ -72,4 +74,6 @@ render() method comes with the Component
 ## componentDidMount :
 
 mounting means when the react put our component on the browser for the first time it calls whatever block of code inside the componentDidMount(){}
+
+componentDidMount() executes after the execution of the page
 

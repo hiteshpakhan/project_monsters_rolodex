@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+
+import { CardList } from "./components/card-list/card-list.component";
+
 import './App.css';
 
 
@@ -7,20 +10,7 @@ class App extends Component {
     super();
 
     this.state = {
-      monsters: [
-        {
-          name: "name 1",
-          id: "as21"
-        },
-        {
-          name: "name 2",
-          id: "as22"
-        },
-        {
-          name: "name 3",
-          id: "as23"
-        }
-      ]
+      monsters: []
     }
   }
 
@@ -33,6 +23,7 @@ componentDidMount(){
   render() {
     return (
       <div className="app">
+        <CardList name="hitesh"/>
         {
           this.state.monsters.map(monster => (
           <h1 key={monster.id}> {monster.name} </h1>
