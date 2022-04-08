@@ -30,7 +30,7 @@
 * to add css by class we use the term className insted of class because we already use the class for building the class based component
 
 
-# our first on button click change exercise
+## our first on button click change exercise
 
         import React, { Component } from "react";
         import './App.css';
@@ -59,4 +59,17 @@
         export default App;
 
 
-hh
+## Component :
+
+        import React, { Component } from "react";
+
+we import the Component for using the class based component
+render() method comes with the Component
+
+
+# life cycle method
+
+## componentDidMount :
+
+
+
