@@ -23,7 +23,7 @@ componentDidMount(){
 
   render() {
     return (
-      <div className="app">
+      <div className="App">
         {console.log("this is inside the App")}
         <CardList monsters={this.state.monsters} />
       </div>
