@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-
 import { CardList } from "./components/card-list/card-list.component";
-
 import './App.css';
 
 
@@ -10,7 +8,8 @@ class App extends Component {
     super();
 
     this.state = {
-      monsters: []
+      monsters: [],
+      searchfield: ""
     }
   }
 
@@ -22,10 +21,16 @@ componentDidMount(){
 }
 
   render() {
+    {console.log("this is the render method")}
+    const {monsters, searchfield} = this.state;
+    const filteredMonsters = monsters.filter(monster =>
+      monster.name.toLowerCase().includes(searchfield.toLowerCase())  
+    );
     return (
       <div className="App">
-        {console.log("this is inside the App")}
-        <CardList monsters={this.state.monsters} />
+        <input type="search" placeholder="search monsters" onChange={e => this.setState({searchfield: e.target.value}) } />
+        {console.log("this is inside return")}
+        <CardList monsters={filteredMonsters} />
       </div>
     );
   }

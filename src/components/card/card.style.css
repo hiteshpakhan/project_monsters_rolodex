@@ -1,4 +1,6 @@
 .card-container {
+    width: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     background-color: #95dada;

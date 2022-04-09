@@ -61,12 +61,30 @@
         export default App;
 
 
-## Component :
+# Component :
+
+## class based component
 
         import React, { Component } from "react";
 
 we import the Component for using the class based component
 render() method comes with the Component
+
+## function based component
+
+function based component does not have access to the lifecycle method or the state method or render 
+because they comen with the {Component} which only can be accessed by class based component
+
+syntax of function based component:
+
+        const Function_name = () =>{
+            return(
+                <div>
+                ----
+                </div>
+            )
+        }
+
 
 
 # life cycle method
