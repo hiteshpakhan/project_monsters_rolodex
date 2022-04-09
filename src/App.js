@@ -18,16 +18,14 @@ componentDidMount(){
   fetch("https://jsonplaceholder.typicode.com/users")
   .then(response => response.json())
   .then(users => this.setState({monsters: users}));
+  console.log("this is inside the componentDidMount");
 }
 
   render() {
     return (
       <div className="app">
-        <CardList name="hitesh"/>
-        {
-          this.state.monsters.map(monster => (
-          <h1 key={monster.id}> {monster.name} </h1>
-          ))}
+        {console.log("this is inside the App")}
+        <CardList monsters={this.state.monsters} />
       </div>
     );
   }
