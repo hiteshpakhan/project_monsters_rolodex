@@ -33,7 +33,7 @@ componentDidMount(){
     );
     return (
       <div className="App">
-        <h1>Monsters Rolodox</h1>
+        <h1>Monsters Rolodox jadu</h1>
         <SearchBox 
           placeholder="search monster"
           handleChange={this.handleChange}
