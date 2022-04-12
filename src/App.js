@@ -21,6 +21,10 @@ componentDidMount(){
   console.log("this is inside the componentDidMount");
 }
 
+  handleChange = (e) => {
+    this.setState({searchfield: e.target.value});
+  }
+
   render() {
     {console.log("this is the render method")}
     const {monsters, searchfield} = this.state;
@@ -29,9 +33,10 @@ componentDidMount(){
     );
     return (
       <div className="App">
+        <h1>Monsters Rolodox</h1>
         <SearchBox 
           placeholder="search monster"
-          handleChange={e => this.setState({searchfield: e.target.value})}
+          handleChange={this.handleChange}
         />
         <CardList monsters={filteredMonsters} />
       </div>
