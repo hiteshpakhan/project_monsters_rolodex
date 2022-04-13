@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/project_monsters_rolodex/static/css/main.d0701dfe.css",
-    "main.js": "/project_monsters_rolodex/static/js/main.2a7124d5.js",
+    "main.css": "/project_monsters_rolodex/static/css/main.593c8c56.css",
+    "main.js": "/project_monsters_rolodex/static/js/main.cc7b28ca.js",
     "static/js/787.e4e9b7ff.chunk.js": "/project_monsters_rolodex/static/js/787.e4e9b7ff.chunk.js",
+    "static/media/SEGA.woff": "/project_monsters_rolodex/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
     "index.html": "/project_monsters_rolodex/index.html",
-    "main.d0701dfe.css.map": "/project_monsters_rolodex/static/css/main.d0701dfe.css.map",
-    "main.2a7124d5.js.map": "/project_monsters_rolodex/static/js/main.2a7124d5.js.map",
+    "main.593c8c56.css.map": "/project_monsters_rolodex/static/css/main.593c8c56.css.map",
+    "main.cc7b28ca.js.map": "/project_monsters_rolodex/static/js/main.cc7b28ca.js.map",
     "787.e4e9b7ff.chunk.js.map": "/project_monsters_rolodex/static/js/787.e4e9b7ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0701dfe.css",
-    "static/js/main.2a7124d5.js"
+    "static/css/main.593c8c56.css",
+    "static/js/main.cc7b28ca.js"
   ]
 }
